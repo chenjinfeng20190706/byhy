@@ -1,0 +1,290 @@
+
+
+  ========= 测试开始 : 20210407_172156 =========
+
+
+
+>>> cases\空白数据\
+
+[ suite setup ] cases\空白数据\
+
+
+>>> cases\空白数据\tc01.py
+
+* 添加课程功能tc001
+
+[ case setup ] 添加课程功能tc001
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加java课程和python课程 
+
+
+-- 第 2 步 -- 列出所有的课程 
+
+
+-- 第 3 步 -- 检查列出的课程与添加的是否一致 
+
+
+** 检查点 **  列出的课程与添加的一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加课程功能tc001
+
+
+>>> cases\空白数据\d_初中语文和初中数学\
+
+[ suite setup ] cases\空白数据\d_初中语文和初中数学\
+
+
+>>> cases\空白数据\d_初中语文和初中数学\tc02.py
+
+* 添加老师功能tc002
+
+[ case setup ] 添加老师功能tc002
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加老师 
+
+
+-- 第 2 步 -- 列出所有的老师 
+
+
+-- 第 3 步 -- 检查列出的老师与添加的老师是否一致 
+
+
+** 检查点 **  列出的老师与添加的老师一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加老师功能tc002
+
+* 添加培训班tc003
+
+[ case setup ] 添加培训班tc003
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加培训班 
+
+
+-- 第 2 步 -- 列出所有的培训班 
+
+
+-- 第 3 步 -- 检查列出的培训班与添加的培训班是否一致 
+
+
+** 检查点 **  列出的培训班与添加的培训班一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加培训班tc003
+
+
+>>> cases\空白数据\d_初中语文和初中数学\d_培训班初中班\
+
+[ suite setup ] cases\空白数据\d_初中语文和初中数学\d_培训班初中班\
+
+
+>>> cases\空白数据\d_初中语文和初中数学\d_培训班初中班\tc04.py
+
+* 添加培训班期tc004
+
+[ case setup ] 添加培训班期tc004
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加初中班1期  
+
+
+-- 第 2 步 -- 列出所有培训班期 
+
+
+-- 第 3 步 -- 检查列出的培训班期与添加的培训班期是否一致 
+
+
+** 检查点 **  列出的培训班期与添加的培训班期一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加培训班期tc004
+
+
+>>> cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\
+
+[ suite setup ] cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\
+
+
+>>> cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\d_初中班1期\
+
+[ suite setup ] cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\d_初中班1期\
+
+
+>>> cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\d_初中班1期\学生管理\tc03.py
+
+* 添加学生tc0003
+
+[ case setup ] 添加学生tc0003
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加学生关羽和张飞 
+
+
+-- 第 2 步 -- 列出所有的学生 
+
+['张飞', '关羽']
+
+-- 第 3 步 -- 检查列出的学生是否与添加的一致 
+
+
+** 检查点 **  列出的学生与添的学生一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加学生tc0003
+case teardown fail | Message: unknown error: Element <button type="button" class="btn btn-green btn-outlined btn-xs ng-scope" ng-click="delOne(one)" ng-if="!one.editing">...</button> is not clickable at point (748, 504). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\d_初中班1期\学生管理\tc03.py", line 12, in teardown
+    webopadmin.DeleteAllStudents()
+  File "E:\temp\byhy\hytest\task08\lib\keywords.py", line 209, in DeleteAllStudents
+    eles[0].click()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button type="button" class="btn btn-green btn-outlined btn-xs ng-scope" ng-click="delOne(one)" ng-if="!one.editing">...</button> is not clickable at point (748, 504). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\d_初中班1期\
+suite teardown fail | Message: unknown error: Element <a ui-sref="traininggrade" href="#/traininggrade">...</a> is not clickable at point (360, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\d_初中班1期\__st__.py", line 7, in suite_teardown
+    webopadmin.DeleteAllClassDatas()
+  File "E:\temp\byhy\hytest\task08\lib\keywords.py", line 164, in DeleteAllClassDatas
+    self.driver.find_element_by_css_selector("a[ui-sref=\"traininggrade\"]").click()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <a ui-sref="traininggrade" href="#/traininggrade">...</a> is not clickable at point (360, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\
+suite teardown fail | Message: unknown error: Element <a ui-sref="teacher" href="#/teacher">...</a> is not clickable at point (210, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\空白数据\d_初中语文和初中数学\d_培训班初中班\d_孔子和庄子两个老师\__st__.py", line 7, in suite_teardown
+    webopadmin.DeleteAllTeachers()
+  File "E:\temp\byhy\hytest\task08\lib\keywords.py", line 61, in DeleteAllTeachers
+    self.driver.find_element_by_css_selector("a[ui-sref=\"teacher\"]").click()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <a ui-sref="teacher" href="#/teacher">...</a> is not clickable at point (210, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\空白数据\d_初中语文和初中数学\d_培训班初中班\
+suite teardown fail | Message: unknown error: Element <a ui-sref="training" href="#/training">...</a> is not clickable at point (277, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\空白数据\d_初中语文和初中数学\d_培训班初中班\__st__.py", line 7, in suite_teardown
+    webopadmin.DeleteAllClasses()
+  File "E:\temp\byhy\hytest\task08\lib\keywords.py", line 115, in DeleteAllClasses
+    self.driver.find_element_by_css_selector("a[ui-sref=\"training\"]").click()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <a ui-sref="training" href="#/training">...</a> is not clickable at point (277, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\空白数据\d_初中语文和初中数学\
+suite teardown fail | Message: unknown error: Element <a ui-sref="course" href="#/">...</a> is not clickable at point (150, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\空白数据\d_初中语文和初中数学\__st__.py", line 12, in suite_teardown
+    webopadmin.DeleteAllCourses()
+  File "E:\temp\byhy\hytest\task08\lib\keywords.py", line 22, in DeleteAllCourses
+    self.driver.find_element_by_css_selector("a[ui-sref=\"course\"]").click()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <a ui-sref="course" href="#/">...</a> is not clickable at point (150, 26). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 889px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\空白数据\
+
+
+  ========= 测试结束 : 20210407_172434 =========
+
+
+  耗时    : 157.884 秒
+
+
+  用例数量 : 5
+
+  通过 : 5
+
+  失败 : 0
+
+  异常 : 0
+
+  套件初始化失败 : 0
+
+  套件清除  失败 : 4
+
+  用例初始化失败 : 0
+
+  用例清除  失败 : 1

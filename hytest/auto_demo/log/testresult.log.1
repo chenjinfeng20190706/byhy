@@ -1,0 +1,95 @@
+
+
+  ========= 测试开始 : 20210316_120919 =========
+
+
+
+>>> cases\
+
+[ suite setup ] cases\
+suite_setup
+打开浏览器
+
+
+>>> cases\管理员登录.py
+
+* 登录 - UI-0003
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 输入网址 
+
+
+-- 第 2 步 -- 输入用户名密码 
+
+
+-- 第 3 步 -- 点击登录 
+
+  ABORT   Message: no such alert
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\管理员登录.py", line 54, in teststeps
+    notify = wd.switch_to.alert.text
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 55, in alert
+    alert.text
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\common\alert.py", line 69, in text
+    return self.driver.execute(Command.GET_ALERT_TEXT)["value"]
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ case teardown ] 登录 - UI-0003
+case teardown fail | Message: no such element: Unable to locate element: {"method":"id","selector":"username"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\管理员登录.py", line 63, in teardown
+    wd.find_element_by_id('username').clear()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"username"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\
+suite_teardown
+
+
+  ========= 测试结束 : 20210316_120941 =========
+
+
+  耗时    : 21.657 秒
+
+
+  用例数量 : 1
+
+  通过 : 0
+
+  失败 : 0
+
+  异常 : 1
+
+  套件初始化失败 : 0
+
+  套件清除  失败 : 0
+
+  用例初始化失败 : 0
+
+  用例清除  失败 : 1

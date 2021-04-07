@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.6.5 on win32)" generated="20210312 17:15:06.053" rpa="false">
+<suite id="s1" name="Tc" source="E:\temp\byhy\task\tc">
+<suite id="s1-s1" name="空白数据无客户无药品无订单" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>delete_all_orders</arg>
+<arg>AND</arg>
+<arg>delete_all_medcines</arg>
+<arg>AND</arg>
+<arg>delete_all_customers</arg>
+</arguments>
+<kw name="Delete All Orders" library="pylib.APImgr">
+<msg timestamp="20210312 17:15:07.110" level="INFO">{'ret': 0}
+{'ret': 0, 'retlist': [], 'total': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:06.214" endtime="20210312 17:15:07.110"></status>
+</kw>
+<kw name="Delete All Medcines" library="pylib.APImgr">
+<msg timestamp="20210312 17:15:07.886" level="INFO">{'ret': 0}
+{'ret': 0, 'retlist': [], 'total': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:07.110" endtime="20210312 17:15:07.886"></status>
+</kw>
+<kw name="Delete All Customers" library="pylib.APImgr">
+<msg timestamp="20210312 17:15:08.788" level="INFO">{'ret': 0}
+{'ret': 0, 'retlist': [], 'total': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:07.886" endtime="20210312 17:15:08.789"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:06.214" endtime="20210312 17:15:08.789"></status>
+</kw>
+<suite id="s1-s1-s1" name="10个客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\10个客户">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院1</arg>
+<arg>13345679931</arg>
+<arg>武汉市桥西医院北路1</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院2</arg>
+<arg>13345679932</arg>
+<arg>武汉市桥西医院北路2</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院3</arg>
+<arg>13345679933</arg>
+<arg>武汉市桥西医院北路3</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院4</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路4</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院5</arg>
+<arg>13345679935</arg>
+<arg>武汉市桥西医院北路5</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院6</arg>
+<arg>13345679936</arg>
+<arg>武汉市桥西医院北路6</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院7</arg>
+<arg>13345679937</arg>
+<arg>武汉市桥西医院北路7</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院8</arg>
+<arg>13345679938</arg>
+<arg>武汉市桥西医院北路8</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院9</arg>
+<arg>13345679939</arg>
+<arg>武汉市桥西医院北路9</arg>
+<arg>AND</arg>
+<arg>add_customers</arg>
+<arg>武汉市桥西医院10</arg>
+<arg>13345679940</arg>
+<arg>武汉市桥西医院北路10</arg>
+</arguments>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院1</arg>
+<arg>13345679931</arg>
+<arg>武汉市桥西医院北路1</arg>
+</arguments>
+<msg timestamp="20210312 17:15:09.705" level="INFO">{'ret': 0}
+{'id': 456, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:08.796" endtime="20210312 17:15:09.706"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院2</arg>
+<arg>13345679932</arg>
+<arg>武汉市桥西医院北路2</arg>
+</arguments>
+<msg timestamp="20210312 17:15:10.644" level="INFO">{'ret': 0}
+{'id': 457, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:09.706" endtime="20210312 17:15:10.645"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院3</arg>
+<arg>13345679933</arg>
+<arg>武汉市桥西医院北路3</arg>
+</arguments>
+<msg timestamp="20210312 17:15:11.440" level="INFO">{'ret': 0}
+{'id': 458, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:10.646" endtime="20210312 17:15:11.441"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院4</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路4</arg>
+</arguments>
+<msg timestamp="20210312 17:15:12.194" level="INFO">{'ret': 0}
+{'id': 459, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:11.441" endtime="20210312 17:15:12.195"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院5</arg>
+<arg>13345679935</arg>
+<arg>武汉市桥西医院北路5</arg>
+</arguments>
+<msg timestamp="20210312 17:15:13.060" level="INFO">{'ret': 0}
+{'id': 460, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:12.195" endtime="20210312 17:15:13.060"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院6</arg>
+<arg>13345679936</arg>
+<arg>武汉市桥西医院北路6</arg>
+</arguments>
+<msg timestamp="20210312 17:15:14.068" level="INFO">{'ret': 0}
+{'id': 461, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:13.060" endtime="20210312 17:15:14.068"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院7</arg>
+<arg>13345679937</arg>
+<arg>武汉市桥西医院北路7</arg>
+</arguments>
+<msg timestamp="20210312 17:15:14.962" level="INFO">{'ret': 0}
+{'id': 462, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:14.069" endtime="20210312 17:15:14.962"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院8</arg>
+<arg>13345679938</arg>
+<arg>武汉市桥西医院北路8</arg>
+</arguments>
+<msg timestamp="20210312 17:15:15.842" level="INFO">{'ret': 0}
+{'id': 463, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:14.962" endtime="20210312 17:15:15.842"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院9</arg>
+<arg>13345679939</arg>
+<arg>武汉市桥西医院北路9</arg>
+</arguments>
+<msg timestamp="20210312 17:15:16.811" level="INFO">{'ret': 0}
+{'id': 464, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:15.843" endtime="20210312 17:15:16.811"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院10</arg>
+<arg>13345679940</arg>
+<arg>武汉市桥西医院北路10</arg>
+</arguments>
+<msg timestamp="20210312 17:15:17.713" level="INFO">{'ret': 0}
+{'id': 465, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:16.812" endtime="20210312 17:15:17.713"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:08.795" endtime="20210312 17:15:17.713"></status>
+</kw>
+<suite id="s1-s1-s1-s1" name="添加客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\10个客户\添加客户.robot">
+<test id="s1-s1-s1-s1-t1" name="API-0152">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院11</arg>
+<arg>13345679941</arg>
+<arg>武汉市桥西医院北路11</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:18.565" level="INFO">{'ret': 0}
+{'id': 466, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:18.565" level="INFO">${retadd} = {'ret': 0, 'id': 466}</msg>
+<status status="PASS" starttime="20210312 17:15:17.724" endtime="20210312 17:15:18.565"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:18.568" endtime="20210312 17:15:18.586"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:18.588" level="INFO">${cuntomer_id} = 466</msg>
+<status status="PASS" starttime="20210312 17:15:18.587" endtime="20210312 17:15:18.588"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:19.362" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路11',
+              'id': 466,
+              'name': '武汉市桥西医院11',
+              'phonenumber': '13345679941'},
+             {'address': '武汉市桥西医院北路10',
+              'id': 465,
+              'name': '武汉市桥西医院10',
+              'phonenumber': '13345679940'},
+             {'address': '武汉市桥西医院北路9',
+              'id': 464,
+              'name': '武汉市桥西医院9',
+              'phonenumber': '13345679939'},
+             {'address': '武汉市桥西医院北路8',
+              'id': 463,
+              'name': '武汉市桥西医院8',
+              'phonenumber': '13345679938'},
+             {'address': '武汉市桥西医院北路7',
+              'id': 462,
+              'name': '武汉市桥西医院7',
+              'phonenumber': '13345679937'},
+             {'address': '武汉市桥西医院北路6',
+              'id': 461,
+              'name': '武汉市桥西医院6',
+              'phonenumber': '13345679936'},
+             {'address': '武汉市桥西医院北路5',
+              'id': 460,
+              'name': '武汉市桥西医院5',
+              'phonenumber': '13345679935'},
+             {'address': '武汉市桥西医院北路4',
+              'id': 459,
+              'name': '武汉市桥西医院4',
+              'phonenumber': '13345679934'},
+             {'address': '武汉市桥西医院北路3',
+              'id': 458,
+              'name': '武汉市桥西医院3',
+              'phonenumber': '13345679933'},
+             {'address': '武汉市桥西医院北路2',
+              'id': 457,
+              'name': '武汉市桥西医院2',
+              'phonenumber': '13345679932'}],
+ 'total': 11}</msg>
+<msg timestamp="20210312 17:15:19.362" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 466, 'name': '武汉市桥西医院11', 'phonenumber': '13345679941', 'address': '武汉市桥西医院北路11'}, {'id': 465, 'name': '武汉市桥西医院10', 'phonenumber': '13345679940', 'address': '武汉市桥西医院北路10'...</msg>
+<status status="PASS" starttime="20210312 17:15:18.589" endtime="20210312 17:15:19.362"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院11</arg>
+<arg>13345679941</arg>
+<arg>武汉市桥西医院北路11</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:19.363" endtime="20210312 17:15:19.364"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:20.187" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:19.365" endtime="20210312 17:15:20.188"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:17.722" endtime="20210312 17:15:20.189" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210312 17:15:17.714" endtime="20210312 17:15:20.197"></status>
+</suite>
+<kw name="Delete All Customers" library="pylib.APImgr" type="teardown">
+<msg timestamp="20210312 17:15:30.398" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路10',
+              'id': 465,
+              'name': '武汉市桥西医院10',
+              'phonenumber': '13345679940'},
+             {'address': '武汉市桥西医院北路9',
+              'id': 464,
+              'name': '武汉市桥西医院9',
+              'phonenumber': '13345679939'},
+             {'address': '武汉市桥西医院北路8',
+              'id': 463,
+              'name': '武汉市桥西医院8',
+              'phonenumber': '13345679938'},
+             {'address': '武汉市桥西医院北路7',
+              'id': 462,
+              'name': '武汉市桥西医院7',
+              'phonenumber': '13345679937'},
+             {'address': '武汉市桥西医院北路6',
+              'id': 461,
+              'name': '武汉市桥西医院6',
+              'phonenumber': '13345679936'},
+             {'address': '武汉市桥西医院北路5',
+              'id': 460,
+              'name': '武汉市桥西医院5',
+              'phonenumber': '13345679935'},
+             {'address': '武汉市桥西医院北路4',
+              'id': 459,
+              'name': '武汉市桥西医院4',
+              'phonenumber': '13345679934'},
+             {'address': '武汉市桥西医院北路3',
+              'id': 458,
+              'name': '武汉市桥西医院3',
+              'phonenumber': '13345679933'},
+             {'address': '武汉市桥西医院北路2',
+              'id': 457,
+              'name': '武汉市桥西医院2',
+              'phonenumber': '13345679932'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 456,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 10}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:20.220" endtime="20210312 17:15:30.399"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:08.789" endtime="20210312 17:15:30.399"></status>
+</suite>
+<suite id="s1-s1-s2" name="删除客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\删除客户.robot">
+<test id="s1-s1-s2-t1" name="API-0251">
+<kw name="Delete Customers" library="pylib.APImgr">
+<arguments>
+<arg>8888</arg>
+</arguments>
+<assign>
+<var>${ret_delete}</var>
+</assign>
+<msg timestamp="20210312 17:15:31.530" level="INFO">{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:31.534" level="FAIL">JSONDecodeError: Expecting value: line 1 column 1 (char 0)</msg>
+<status status="FAIL" starttime="20210312 17:15:30.467" endtime="20210312 17:15:31.534"></status>
+</kw>
+<status status="FAIL" starttime="20210312 17:15:30.465" endtime="20210312 17:15:31.539" critical="yes">JSONDecodeError: Expecting value: line 1 column 1 (char 0)</status>
+</test>
+<status status="FAIL" starttime="20210312 17:15:30.448" endtime="20210312 17:15:31.544"></status>
+</suite>
+<suite id="s1-s1-s3" name="存在一个客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\存在一个客户">
+<kw name="Add Customers" library="pylib.APImgr" type="setup">
+<arguments>
+<arg>武汉市桥西医院1</arg>
+<arg>13345679931</arg>
+<arg>武汉市桥西医院北路1</arg>
+</arguments>
+<msg timestamp="20210312 17:15:32.517" level="INFO">{'ret': 0}
+{'id': 467, 'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:31.568" endtime="20210312 17:15:32.518"></status>
+</kw>
+<suite id="s1-s1-s3-s1" name="删除客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\存在一个客户\删除客户.robot">
+<test id="s1-s1-s3-s1-t1" name="API-0252">
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer_before}</var>
+</assign>
+<msg timestamp="20210312 17:15:33.297" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 1}</msg>
+<msg timestamp="20210312 17:15:33.297" level="INFO">${list_customer_before} = {'ret': 0, 'retlist': [{'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], 'total': 1}</msg>
+<status status="PASS" starttime="20210312 17:15:32.532" endtime="20210312 17:15:33.297"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:34.186" level="INFO">{'ret': 0}
+{'id': 468, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:34.187" level="INFO">${retadd} = {'ret': 0, 'id': 468}</msg>
+<status status="PASS" starttime="20210312 17:15:33.299" endtime="20210312 17:15:34.187"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:34.189" endtime="20210312 17:15:34.191"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:34.206" level="INFO">${cuntomer_id} = 468</msg>
+<status status="PASS" starttime="20210312 17:15:34.205" endtime="20210312 17:15:34.207"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<assign>
+<var>${ret_delete}</var>
+</assign>
+<msg timestamp="20210312 17:15:34.982" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:34.983" level="INFO">${ret_delete} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:34.209" endtime="20210312 17:15:34.983"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_delete["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:34.986" endtime="20210312 17:15:34.988"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer_after}</var>
+</assign>
+<msg timestamp="20210312 17:15:35.710" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 1}</msg>
+<msg timestamp="20210312 17:15:35.711" level="INFO">${list_customer_after} = {'ret': 0, 'retlist': [{'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], 'total': 1}</msg>
+<status status="PASS" starttime="20210312 17:15:34.988" endtime="20210312 17:15:35.711"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${list_customer_before}</arg>
+<arg>${list_customer_after}</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:35.712" endtime="20210312 17:15:35.712"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:32.530" endtime="20210312 17:15:35.713" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210312 17:15:32.518" endtime="20210312 17:15:35.719"></status>
+</suite>
+<suite id="s1-s1-s3-s2" name="编辑客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\存在一个客户\编辑客户.robot">
+<test id="s1-s1-s3-s2-t1" name="API-0202">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:36.591" level="INFO">{'ret': 0}
+{'id': 469, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:36.591" level="INFO">${retadd} = {'ret': 0, 'id': 469}</msg>
+<status status="PASS" starttime="20210312 17:15:35.740" endtime="20210312 17:15:36.592"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:36.593" endtime="20210312 17:15:36.593"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:36.595" level="INFO">${cuntomer_id} = 469</msg>
+<status status="PASS" starttime="20210312 17:15:36.594" endtime="20210312 17:15:36.595"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:37.553" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:37.554" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:36.595" endtime="20210312 17:15:37.554"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:37.556" endtime="20210312 17:15:37.557"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:38.514" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路',
+              'id': 469,
+              'name': '武汉市桥西医院88',
+              'phonenumber': '13345679934'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:15:38.514" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 469, 'name': '武汉市桥西医院88', 'phonenumber': '13345679934', 'address': '武汉市桥西医院北路'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], ...</msg>
+<status status="PASS" starttime="20210312 17:15:37.558" endtime="20210312 17:15:38.514"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:38.515" endtime="20210312 17:15:38.516"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:39.378" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:38.517" endtime="20210312 17:15:39.378"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:35.737" endtime="20210312 17:15:39.380" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t2" name="API-0203">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:40.317" level="INFO">{'ret': 0}
+{'id': 470, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:40.318" level="INFO">${retadd} = {'ret': 0, 'id': 470}</msg>
+<status status="PASS" starttime="20210312 17:15:39.390" endtime="20210312 17:15:40.318"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:40.319" endtime="20210312 17:15:40.319"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:40.320" level="INFO">${cuntomer_id} = 470</msg>
+<status status="PASS" starttime="20210312 17:15:40.320" endtime="20210312 17:15:40.321"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:41.267" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:41.268" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:40.321" endtime="20210312 17:15:41.268"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:41.269" endtime="20210312 17:15:41.270"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:42.397" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路',
+              'id': 470,
+              'name': '武汉市桥西医院',
+              'phonenumber': '13345679988'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:15:42.398" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 470, 'name': '武汉市桥西医院', 'phonenumber': '13345679988', 'address': '武汉市桥西医院北路'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], 't...</msg>
+<status status="PASS" starttime="20210312 17:15:41.271" endtime="20210312 17:15:42.398"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:42.399" endtime="20210312 17:15:42.399"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:43.182" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:42.400" endtime="20210312 17:15:43.183"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:39.389" endtime="20210312 17:15:43.183" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t3" name="API-0204">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路88</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:43.960" level="INFO">{'ret': 0}
+{'id': 471, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:43.960" level="INFO">${retadd} = {'ret': 0, 'id': 471}</msg>
+<status status="PASS" starttime="20210312 17:15:43.188" endtime="20210312 17:15:43.960"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:43.962" endtime="20210312 17:15:43.963"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:43.966" level="INFO">${cuntomer_id} = 471</msg>
+<status status="PASS" starttime="20210312 17:15:43.965" endtime="20210312 17:15:43.966"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:44.985" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:44.985" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:43.967" endtime="20210312 17:15:44.986"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:44.988" endtime="20210312 17:15:44.989"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:45.765" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路',
+              'id': 471,
+              'name': '武汉市桥西医院',
+              'phonenumber': '13345679934'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:15:45.765" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 471, 'name': '武汉市桥西医院', 'phonenumber': '13345679934', 'address': '武汉市桥西医院北路'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], 't...</msg>
+<status status="PASS" starttime="20210312 17:15:44.990" endtime="20210312 17:15:45.765"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:45.766" endtime="20210312 17:15:45.767"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:46.575" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:45.768" endtime="20210312 17:15:46.575"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:43.187" endtime="20210312 17:15:46.575" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t4" name="API-0205">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:47.541" level="INFO">{'ret': 0}
+{'id': 472, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:47.541" level="INFO">${retadd} = {'ret': 0, 'id': 472}</msg>
+<status status="PASS" starttime="20210312 17:15:46.588" endtime="20210312 17:15:47.541"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:47.542" endtime="20210312 17:15:47.543"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:47.544" level="INFO">${cuntomer_id} = 472</msg>
+<status status="PASS" starttime="20210312 17:15:47.543" endtime="20210312 17:15:47.544"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:48.645" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:48.645" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:47.545" endtime="20210312 17:15:48.645"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:48.648" endtime="20210312 17:15:48.649"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:49.437" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路',
+              'id': 472,
+              'name': '武汉市桥西医院88',
+              'phonenumber': '13345679988'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:15:49.438" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 472, 'name': '武汉市桥西医院88', 'phonenumber': '13345679988', 'address': '武汉市桥西医院北路'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], ...</msg>
+<status status="PASS" starttime="20210312 17:15:48.650" endtime="20210312 17:15:49.438"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:49.439" endtime="20210312 17:15:49.439"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:50.269" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:49.440" endtime="20210312 17:15:50.269"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:46.584" endtime="20210312 17:15:50.270" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t5" name="API-0206">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路88</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:51.119" level="INFO">{'ret': 0}
+{'id': 473, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:51.119" level="INFO">${retadd} = {'ret': 0, 'id': 473}</msg>
+<status status="PASS" starttime="20210312 17:15:50.279" endtime="20210312 17:15:51.120"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:51.120" endtime="20210312 17:15:51.121"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:51.122" level="INFO">${cuntomer_id} = 473</msg>
+<status status="PASS" starttime="20210312 17:15:51.121" endtime="20210312 17:15:51.122"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:52.041" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:52.042" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:51.123" endtime="20210312 17:15:52.042"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:52.043" endtime="20210312 17:15:52.043"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:52.887" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路',
+              'id': 473,
+              'name': '武汉市桥西医院',
+              'phonenumber': '13345679934'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:15:52.887" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 473, 'name': '武汉市桥西医院', 'phonenumber': '13345679934', 'address': '武汉市桥西医院北路'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], 't...</msg>
+<status status="PASS" starttime="20210312 17:15:52.044" endtime="20210312 17:15:52.887"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:52.888" endtime="20210312 17:15:52.889"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:53.826" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:52.890" endtime="20210312 17:15:53.826"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:50.275" endtime="20210312 17:15:53.827" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t6" name="API-0207">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:54.685" level="INFO">{'ret': 0}
+{'id': 474, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:54.686" level="INFO">${retadd} = {'ret': 0, 'id': 474}</msg>
+<status status="PASS" starttime="20210312 17:15:53.833" endtime="20210312 17:15:54.686"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:54.688" endtime="20210312 17:15:54.689"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:54.691" level="INFO">${cuntomer_id} = 474</msg>
+<status status="PASS" starttime="20210312 17:15:54.690" endtime="20210312 17:15:54.691"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路88</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:55.674" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:55.674" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:54.692" endtime="20210312 17:15:55.674"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:55.676" endtime="20210312 17:15:55.676"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:15:56.482" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路88',
+              'id': 474,
+              'name': '武汉市桥西医院',
+              'phonenumber': '13345679988'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:15:56.482" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 474, 'name': '武汉市桥西医院', 'phonenumber': '13345679988', 'address': '武汉市桥西医院北路88'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}], ...</msg>
+<status status="PASS" starttime="20210312 17:15:55.677" endtime="20210312 17:15:56.482"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路88</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:56.483" endtime="20210312 17:15:56.484"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:15:57.593" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:56.485" endtime="20210312 17:15:57.593"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:53.831" endtime="20210312 17:15:57.594" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t7" name="API-0208">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:15:58.459" level="INFO">{'ret': 0}
+{'id': 475, 'ret': 0}</msg>
+<msg timestamp="20210312 17:15:58.459" level="INFO">${retadd} = {'ret': 0, 'id': 475}</msg>
+<status status="PASS" starttime="20210312 17:15:57.603" endtime="20210312 17:15:58.459"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:58.460" endtime="20210312 17:15:58.461"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:15:58.463" level="INFO">${cuntomer_id} = 475</msg>
+<status status="PASS" starttime="20210312 17:15:58.463" endtime="20210312 17:15:58.463"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路88</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:15:59.378" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:15:59.378" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:15:58.464" endtime="20210312 17:15:59.378"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:15:59.380" endtime="20210312 17:15:59.380"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:16:00.224" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路88',
+              'id': 475,
+              'name': '武汉市桥西医院88',
+              'phonenumber': '13345679988'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 2}</msg>
+<msg timestamp="20210312 17:16:00.224" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 475, 'name': '武汉市桥西医院88', 'phonenumber': '13345679988', 'address': '武汉市桥西医院北路88'}, {'id': 467, 'name': '武汉市桥西医院1', 'phonenumber': '13345679931', 'address': '武汉市桥西医院北路1'}]...</msg>
+<status status="PASS" starttime="20210312 17:15:59.381" endtime="20210312 17:16:00.224"></status>
+</kw>
+<kw name="Customers Should Contain" library="pylib.APImgr">
+<arguments>
+<arg>${list_customer}[retlist]</arg>
+<arg>${cuntomer_id}</arg>
+<arg>武汉市桥西医院88</arg>
+<arg>13345679988</arg>
+<arg>武汉市桥西医院北路88</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:00.225" endtime="20210312 17:16:00.226"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:16:01.255" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:16:00.227" endtime="20210312 17:16:01.256"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:15:57.602" endtime="20210312 17:16:01.257" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-s2-t8" name="API-0209">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院11</arg>
+<arg>13345679911</arg>
+<arg>武汉市桥西医院北路11</arg>
+</arguments>
+<assign>
+<var>${retadd1}</var>
+</assign>
+<msg timestamp="20210312 17:16:02.110" level="INFO">{'ret': 0}
+{'id': 476, 'ret': 0}</msg>
+<msg timestamp="20210312 17:16:02.111" level="INFO">${retadd1} = {'ret': 0, 'id': 476}</msg>
+<status status="PASS" starttime="20210312 17:16:01.271" endtime="20210312 17:16:02.111"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd1["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:02.111" endtime="20210312 17:16:02.112"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd1["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer1_id}</var>
+</assign>
+<msg timestamp="20210312 17:16:02.114" level="INFO">${cuntomer1_id} = 476</msg>
+<status status="PASS" starttime="20210312 17:16:02.113" endtime="20210312 17:16:02.114"></status>
+</kw>
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院22</arg>
+<arg>13345679922</arg>
+<arg>武汉市桥西医院北路22</arg>
+</arguments>
+<assign>
+<var>${retadd2}</var>
+</assign>
+<msg timestamp="20210312 17:16:02.978" level="INFO">{'ret': 0}
+{'id': 477, 'ret': 0}</msg>
+<msg timestamp="20210312 17:16:02.978" level="INFO">${retadd2} = {'ret': 0, 'id': 477}</msg>
+<status status="PASS" starttime="20210312 17:16:02.116" endtime="20210312 17:16:02.978"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd2["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:02.979" endtime="20210312 17:16:02.980"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd2["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer2_id}</var>
+</assign>
+<msg timestamp="20210312 17:16:02.982" level="INFO">${cuntomer2_id} = 477</msg>
+<status status="PASS" starttime="20210312 17:16:02.981" endtime="20210312 17:16:02.982"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list1_customer}</var>
+</assign>
+<msg timestamp="20210312 17:16:03.764" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路22',
+              'id': 477,
+              'name': '武汉市桥西医院22',
+              'phonenumber': '13345679922'},
+             {'address': '武汉市桥西医院北路11',
+              'id': 476,
+              'name': '武汉市桥西医院11',
+              'phonenumber': '13345679911'},
+             {'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 3}</msg>
+<msg timestamp="20210312 17:16:03.765" level="INFO">${list1_customer} = {'ret': 0, 'retlist': [{'id': 477, 'name': '武汉市桥西医院22', 'phonenumber': '13345679922', 'address': '武汉市桥西医院北路22'}, {'id': 476, 'name': '武汉市桥西医院11', 'phonenumber': '13345679911', 'address': '武汉市桥西医院北路11'...</msg>
+<status status="PASS" starttime="20210312 17:16:02.983" endtime="20210312 17:16:03.765"></status>
+</kw>
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer2_id}</arg>
+<arg>武汉市桥西医院11</arg>
+<arg>13345679911</arg>
+<arg>武汉市桥西医院北路11</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:16:04.540" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<msg timestamp="20210312 17:16:04.541" level="INFO">${ret_edit} = {'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:16:03.765" endtime="20210312 17:16:04.541"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ret_edit}[ret]</arg>
+</arguments>
+<msg timestamp="20210312 17:16:04.542" level="INFO">0</msg>
+<status status="PASS" starttime="20210312 17:16:04.542" endtime="20210312 17:16:04.542"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_edit["ret"]==1</arg>
+</arguments>
+<msg timestamp="20210312 17:16:04.545" level="FAIL">'$ret_edit["ret"]==1' should be true.</msg>
+<status status="FAIL" starttime="20210312 17:16:04.544" endtime="20210312 17:16:04.545"></status>
+</kw>
+<kw name="Run Keywords" library="BuiltIn" type="teardown">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>delete_customers</arg>
+<arg>${cuntomer1_id}</arg>
+<arg>AND</arg>
+<arg>delete_customers</arg>
+<arg>${cuntomer2_id}</arg>
+</arguments>
+<kw name="Delete Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer1_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:16:05.395" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:16:04.546" endtime="20210312 17:16:05.395"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr">
+<arguments>
+<arg>${cuntomer2_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:16:06.216" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:16:05.396" endtime="20210312 17:16:06.216"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:16:04.545" endtime="20210312 17:16:06.216"></status>
+</kw>
+<status status="FAIL" starttime="20210312 17:16:01.264" endtime="20210312 17:16:06.224" critical="yes">'$ret_edit["ret"]==1' should be true.</status>
+</test>
+<status status="FAIL" starttime="20210312 17:15:35.729" endtime="20210312 17:16:06.236"></status>
+</suite>
+<kw name="Delete All Customers" library="pylib.APImgr" type="teardown">
+<msg timestamp="20210312 17:16:07.915" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路1',
+              'id': 467,
+              'name': '武汉市桥西医院1',
+              'phonenumber': '13345679931'}],
+ 'total': 1}
+{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:16:06.252" endtime="20210312 17:16:07.915"></status>
+</kw>
+<status status="FAIL" starttime="20210312 17:15:31.555" endtime="20210312 17:16:07.916"></status>
+</suite>
+<suite id="s1-s1-s4" name="添加客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\添加客户.robot">
+<test id="s1-s1-s4-t1" name="API-0151">
+<kw name="Add Customers" library="pylib.APImgr">
+<arguments>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:16:08.757" level="INFO">{'ret': 0}
+{'id': 478, 'ret': 0}</msg>
+<msg timestamp="20210312 17:16:08.758" level="INFO">${retadd} = {'ret': 0, 'id': 478}</msg>
+<status status="PASS" starttime="20210312 17:16:07.945" endtime="20210312 17:16:08.758"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$retadd["ret"] == 0</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:08.760" endtime="20210312 17:16:08.762"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$retadd["id"]</arg>
+</arguments>
+<assign>
+<var>${cuntomer_id}</var>
+</assign>
+<msg timestamp="20210312 17:16:08.764" level="INFO">${cuntomer_id} = 478</msg>
+<status status="PASS" starttime="20210312 17:16:08.763" endtime="20210312 17:16:08.764"></status>
+</kw>
+<kw name="List Customers" library="pylib.APImgr">
+<assign>
+<var>${list_customer}</var>
+</assign>
+<msg timestamp="20210312 17:16:09.686" level="INFO">{'ret': 0}
+{'ret': 0,
+ 'retlist': [{'address': '武汉市桥西医院北路',
+              'id': 478,
+              'name': '武汉市桥西医院',
+              'phonenumber': '13345679934'}],
+ 'total': 1}</msg>
+<msg timestamp="20210312 17:16:09.687" level="INFO">${list_customer} = {'ret': 0, 'retlist': [{'id': 478, 'name': '武汉市桥西医院', 'phonenumber': '13345679934', 'address': '武汉市桥西医院北路'}], 'total': 1}</msg>
+<status status="PASS" starttime="20210312 17:16:08.765" endtime="20210312 17:16:09.687"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$list_customer["retlist"][0]</arg>
+</arguments>
+<assign>
+<var>${customer_info}</var>
+</assign>
+<msg timestamp="20210312 17:16:09.688" level="INFO">${customer_info} = {'id': 478, 'name': '武汉市桥西医院', 'phonenumber': '13345679934', 'address': '武汉市桥西医院北路'}</msg>
+<status status="PASS" starttime="20210312 17:16:09.688" endtime="20210312 17:16:09.688"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$cuntomer_id==$customer_info["id"]</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:09.690" endtime="20210312 17:16:09.690"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$customer_info["name"]=="武汉市桥西医院"</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:09.692" endtime="20210312 17:16:09.693"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$customer_info["phonenumber"]=="13345679934"</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:09.694" endtime="20210312 17:16:09.694"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$customer_info["address"]=="武汉市桥西医院北路"</arg>
+</arguments>
+<status status="PASS" starttime="20210312 17:16:09.695" endtime="20210312 17:16:09.696"></status>
+</kw>
+<kw name="Delete Customers" library="pylib.APImgr" type="teardown">
+<arguments>
+<arg>${cuntomer_id}</arg>
+</arguments>
+<msg timestamp="20210312 17:16:10.546" level="INFO">{'ret': 0}
+{'ret': 0}</msg>
+<status status="PASS" starttime="20210312 17:16:09.697" endtime="20210312 17:16:10.546"></status>
+</kw>
+<status status="PASS" starttime="20210312 17:16:07.944" endtime="20210312 17:16:10.548" critical="yes"></status>
+</test>
+<test id="s1-s1-s4-t2" name="API-0153">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>{"phonenumber": 13598652696,"address": "武汉市桥西医院北路"}</arg>
+</arguments>
+<assign>
+<var>${customer_data}</var>
+</assign>
+<msg timestamp="20210312 17:16:10.560" level="INFO">${customer_data} = {'phonenumber': 13598652696, 'address': '武汉市桥西医院北路'}</msg>
+<status status="PASS" starttime="20210312 17:16:10.559" endtime="20210312 17:16:10.560"></status>
+</kw>
+<kw name="Add Customers2" library="pylib.APImgr">
+<arguments>
+<arg>${customer_data}</arg>
+</arguments>
+<assign>
+<var>${retadd}</var>
+</assign>
+<msg timestamp="20210312 17:16:11.370" level="INFO">{'ret': 0}</msg>
+<msg timestamp="20210312 17:16:11.371" level="FAIL">JSONDecodeError: Expecting value: line 1 column 1 (char 0)</msg>
+<status status="FAIL" starttime="20210312 17:16:10.562" endtime="20210312 17:16:11.371"></status>
+</kw>
+<status status="FAIL" starttime="20210312 17:16:10.554" endtime="20210312 17:16:11.373" critical="yes">JSONDecodeError: Expecting value: line 1 column 1 (char 0)</status>
+</test>
+<status status="FAIL" starttime="20210312 17:16:07.937" endtime="20210312 17:16:11.378"></status>
+</suite>
+<suite id="s1-s1-s5" name="编辑客户" source="E:\temp\byhy\task\tc\空白数据无客户无药品无订单\编辑客户.robot">
+<test id="s1-s1-s5-t1" name="API-0201">
+<kw name="Edit Customers" library="pylib.APImgr">
+<arguments>
+<arg>8888</arg>
+<arg>武汉市桥西医院</arg>
+<arg>13345679934</arg>
+<arg>武汉市桥西医院北路</arg>
+</arguments>
+<assign>
+<var>${ret_edit}</var>
+</assign>
+<msg timestamp="20210312 17:16:12.303" level="INFO">{'ret': 0}</msg>
+<msg timestamp="20210312 17:16:12.304" level="FAIL">JSONDecodeError: Expecting value: line 1 column 1 (char 0)</msg>
+<status status="FAIL" starttime="20210312 17:16:11.399" endtime="20210312 17:16:12.304"></status>
+</kw>
+<status status="FAIL" starttime="20210312 17:16:11.397" endtime="20210312 17:16:12.306" critical="yes">JSONDecodeError: Expecting value: line 1 column 1 (char 0)</status>
+</test>
+<status status="FAIL" starttime="20210312 17:16:11.387" endtime="20210312 17:16:12.312"></status>
+</suite>
+<status status="FAIL" starttime="20210312 17:15:06.100" endtime="20210312 17:16:12.323"></status>
+</suite>
+<status status="FAIL" starttime="20210312 17:15:06.062" endtime="20210312 17:16:12.337"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="4">Critical Tests</stat>
+<stat pass="10" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="4" id="s1" name="Tc">Tc</stat>
+<stat pass="10" fail="4" id="s1-s1" name="空白数据无客户无药品无订单">Tc.空白数据无客户无药品无订单</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="10个客户">Tc.空白数据无客户无药品无订单.10个客户</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="添加客户">Tc.空白数据无客户无药品无订单.10个客户.添加客户</stat>
+<stat pass="0" fail="1" id="s1-s1-s2" name="删除客户">Tc.空白数据无客户无药品无订单.删除客户</stat>
+<stat pass="8" fail="1" id="s1-s1-s3" name="存在一个客户">Tc.空白数据无客户无药品无订单.存在一个客户</stat>
+<stat pass="1" fail="0" id="s1-s1-s3-s1" name="删除客户">Tc.空白数据无客户无药品无订单.存在一个客户.删除客户</stat>
+<stat pass="7" fail="1" id="s1-s1-s3-s2" name="编辑客户">Tc.空白数据无客户无药品无订单.存在一个客户.编辑客户</stat>
+<stat pass="1" fail="1" id="s1-s1-s4" name="添加客户">Tc.空白数据无客户无药品无订单.添加客户</stat>
+<stat pass="0" fail="1" id="s1-s1-s5" name="编辑客户">Tc.空白数据无客户无药品无订单.编辑客户</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

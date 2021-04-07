@@ -1,0 +1,101 @@
+
+
+  ========= 测试开始 : 20210315_120003 =========
+
+
+
+>>> cases\
+
+[ suite setup ] cases\
+
+
+>>> cases\老师管理\添加老师.py
+
+* 添加老师tc_10001
+
+[ case setup ] 添加老师tc_10001
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加张三老师 
+
+
+-- 第 2 步 -- 检查添加的老师是否正确 
+
+先列出老师
+检查列出的老师与添加的是否一致
+
+** 检查点 **  列出的老师与添加的一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加老师tc_10001
+
+
+>>> cases\课程管理\添加课程.py
+
+* 添加课程 tc_0001 
+
+[ case setup ] 添加课程 tc_0001 
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加初中化学和初中物理两门课程 
+
+
+-- 第 2 步 -- 检查添加的课程是否正确 
+
+先列出所有的课程
+
+** 检查点 **  列出的课程与添加的课程一致 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加课程 tc_0001 
+case teardown fail | Message: unknown error: Element <button type="button" class="btn btn-green btn-outlined btn-xs ng-scope" ng-click="delOne(one)" ng-if="!one.editing">...</button> is not clickable at point (847, 497). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 577px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+ 
+Traceback:
+  File "cases\课程管理\添加课程.py", line 14, in teardown
+    webopadmin.DeleteAllCourses()
+  File "E:\temp\byhy\task07\lib\WebOpAdmin.py", line 33, in DeleteAllCourses
+    eles[0].click()
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\tools\python3.6.5\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button type="button" class="btn btn-green btn-outlined btn-xs ng-scope" ng-click="delOne(one)" ng-if="!one.editing">...</button> is not clickable at point (847, 497). Other element would receive the click: <div class="modal-backdrop fade in" style="z-index: 1040; height: 577px;"></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+
+
+[ suite teardown ] cases\
+
+
+  ========= 测试结束 : 20210315_120318 =========
+
+
+  耗时    : 195.184 秒
+
+
+  用例数量 : 2
+
+  通过 : 2
+
+  失败 : 0
+
+  异常 : 0
+
+  套件初始化失败 : 0
+
+  套件清除  失败 : 0
+
+  用例初始化失败 : 0
+
+  用例清除  失败 : 1
